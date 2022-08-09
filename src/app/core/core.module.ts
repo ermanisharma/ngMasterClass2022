@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InvoiceComponent } from './invoice/invoice.component';
+import { GridFilterPipe } from './gridFilter.pipe';
 
 
 
 @NgModule({
   declarations: [
-    InvoiceComponent
-  ],
+      GridFilterPipe
+   ],
   imports: [
     CommonModule
   ],
-  exports:[InvoiceComponent]
+  exports:[GridFilterPipe]
 })
 export class CoreModule { }
