@@ -1,0 +1,19 @@
+<h1>Product</h1>
+
+<table *ngIf="isProductDisplayed">
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>{{product.Id}}</td>
+    <td>{{product.Title}}</td>
+    <td>{{product.Price}}</td>
+  </tr>
+</table>
+<button [style.height.px]="height" [style.width.px]="product.Price" (click)="showProducts()">{{productButtonMsg}}</button>
+<br/><br/>
+<input type="text" [(ngModel)]="name" placeholder="Enter Name"/>
+
+<h3>Entered name is : {{name}}</h3>

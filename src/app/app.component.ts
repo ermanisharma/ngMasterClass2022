@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngMasterClass';
+
+  //pollyfills - convert ts code to browser readable js functions,
+  //this process is known as pollyfills.
 }
